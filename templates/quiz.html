@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>Pokemon quiz</header>
+    <form action="http://192.168.76.202:5000/quizes/pokemon" method="post">
+        <div class="vraag">
+            <label for="vraag_1">Welke pokemon zou de pokemon mascotte zijn?</label> <br><br>
+            <select name="vraag_1" required>
+                <option value="a">eevee</option>
+                <option value="b">scharizard</option>
+                <option value="c">clefairy</option>
+            </select>
+        </div> <br>
+        <div class="vraag">
+            <label for="vraag_2">Welke pokemon games kwammen eerst uit?</label> <br><br>
+            <select name="vraag_2" required>
+                <option value="a">Pokemon Red en Green</option>
+                <option value="b">Pokemon Red en Blue</option>
+                <option value="c">Pokemon Red en Yellow</option>
+            </select>
+        </div> <br>
+        <div class="vraag">
+            <label for="vraag_3">Welke pokemon stappenteller kwam eerst uit?</label> <br><br>
+            <select name="vraag_3" required>
+                <option value="a">Pokemon Runner</option>
+                <option value="b">Pikachu color</option>
+                <option value="c">pokéball plus</option>
+                <option value="d">pokéwalker</option>
+            </select>
+        </div> <br>
+        <div class="vraag">
+            <label for="vraag_4">Wat is de volgorde van de eerste vijf pokemon tcg sets?</label> <br><br>
+            <select name="vraag_4" required>
+                <option value="a">Base set, Jungle, Foselle, Base set 2, Team rocket</option>
+                <option value="b">Base set, Base set 2, Foselle, Jungle, Team rocket</option>
+                <option value="c">Base set, Foselle, Jungle, Team rocket, Base set 2</option>
+                <option value="d">Jungle, Foselle, Team rocket, Base set, Base set 2</option>
+                <option value="e">Team rocket, Base set, Jungle, Base set 2, Foselle</option>
+            </select>
+        </div> <br>
+        <div class="vraag">
+            <label for="vraag_5">Hoeveel soorten pokemon waren er in de eerste pokemon gameboy games?</label><br><br>
+            <input type="number" name="vraag_5" min="1" max="500" required>
+        </div> <br>
+        <div class="vraag">
+            <label for="vraag_6">Welke pokemon werd door ash ketchum eerst releasde in de pokemon aniam?</label> <br><br>
+            <select name="vraag_6" required>
+                <option value="a">Butterfree</option>
+                <option value="b">Squirtle</option>
+                <option value="c">Lapras</option>
+                <option value="d">Seaking</option>
+                <option value="e">Beedril</option>
+                <option value="f">Raticate</option>
+                <option value="g">Primeape</option>
+            </select>
+        </div><br>
+        <div class="vraag">
+            <label for="vraag_7">Wat is de naam van het z-crystal voor mew ?</label><br><br>
+            <select name="vraag_7" required>
+                <option value="a">mew Z</option>
+                <option value="b">mewnium Z</option>
+                <option value="c">mewshunium Z</option>
+            </select>
+        </div><br>
+        <div class="vraag">
+            <label for="vraag_8">In welke generatie krijgen pokemon abilities?</label> <br><br>
+            <input type="number" name="vraag_8" min="1" max="9" required>
+        </div><br>
+       <button type="submit">Toon score</button>
+    </form>
+</body>
+</html>
